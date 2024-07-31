@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<body>
+
+  <!-- <ul>
+    {% for x in fruits %}
+      <li>{{ forloop.revcounter0 }}</li>
+    {% endfor %}
+  </ul> 
+
+<p>In views.py you can see what the fruits variable looks like.</p> -->
+
+<!-- <ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }}</li>
+  {% endfor %}
+</ul>
+<p>In views.py you can see how to create the variable</p>
+<p>In template.html you can see how to use the variable</p> -->
+
+<!-- {% if greeting == 1 %}
+  <h1>Hello</h1>
+{% elif greeting == 2 %}
+  <h1>Welcome</h1>
+{% else %}
+<h1>Good bye</h1>
+{% endif %} -->
+
+<!-- {% if greeting == 1 and day == "Friday"%}
+  <h1>Hello Lovely Weekend</h1>
+{% endif %} -->
+
+<!-- {% for x in cars %}
+  <h1>{{ x.brand }}</h1>
+  <p>{{ x.model }}</p>
+  <p>{{ x.year }}</p>
+{% endfor %} -->
+
+
+<!-- {% for x in members %}
+  <h1>{{ x.id }}</h1>
+  <p>
+    {{ x.firstname }}
+    {{ x.lastname }}
+  </p>
+{% endfor %} -->
+
+
+<table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  {% for x in mymembers %}
+    <tr>
+      <td>{{ x.id }}</td>
+        <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+
+</body>
+</html>
